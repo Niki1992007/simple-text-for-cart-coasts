@@ -1,0 +1,5 @@
+.idea
+site/**/*
+info.txt
+custom-module/*.zip
+storage/**/*
