@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <modification>
-    <name>Дополнительное поле на странице редактирования карточки товара</name>
+    <name>Модификатор к модулю "Альтернативное название товара"</name>
     <code>simple_field_for_cart_coasts</code>
     <version>1.0</version>
     <author>Nikolai Kvasov</author>
@@ -12,13 +12,13 @@
         <operation>
             <search>
                 <![CDATA[
-       $_['error_unique']           = 'SEO URL must be unique!';
-      ]]>
+                    $_['error_unique']           = 'SEO URL must be unique!';
+                ]]>
             </search>
             <add position="after">
                 <![CDATA[
 				 // Переменные кастомного модификатора (для модуля простого текстового поля в картчоке товара) START
-				  $_['custom_name_field_for_list_coasts']  = 'Additional value';
+				  $_['custom_name_field_for_list_coasts']  = 'Alternative Header';
                   $_['custom_invitation']  = 'Enter here additional information for the product';
 				// Переменные кастомного модификатора (для модуля простого текстового поля в картчоке товара)
 			  ]]>
@@ -29,13 +29,13 @@
         <operation>
             <search>
                 <![CDATA[
-       $_['error_unique']           = 'SEO URL должен быть уникальным!';
-      ]]>
+                    $_['error_unique']           = 'SEO URL должен быть уникальным!';
+                ]]>
             </search>
             <add position="after">
                 <![CDATA[
 				 // Переменные кастомного модификатора (для модуля простого текстового поля в картчоке товара) START
-				  $_['custom_name_field_for_list_coasts']  = 'Дополнительное значение';
+				  $_['custom_name_field_for_list_coasts']  = 'Альтернативный заголовок';
                   $_['custom_invitation']  = 'Введите здесь дополнительную информацию для товара';
 				// Переменные кастомного модификатора (для модуля простого текстового поля в картчоке товара)
 			  ]]>
@@ -270,7 +270,7 @@
             <add position="after">
                 <![CDATA[
                 <!-- CUSTOM START -->
-                     <span style="">
+                     <span style="font-size: 16px; font-weight: 500; margin-top: 10px; margin-bottom: 20px; color: #00008b; display: block">
                         {{ custom_caption }}
                      </span>
                 <!-- CUSTOM END -->

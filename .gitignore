@@ -3,3 +3,4 @@ site/**/*
 info.txt
 custom-module/*.zip
 storage/**/*
+custom-module/readme.txt

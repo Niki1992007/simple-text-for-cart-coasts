@@ -1,5 +1,5 @@
 <?php
-$_['heading_title']  = 'Simple text field module in product card';
+$_['heading_title']  = 'Alternative header module in the product card';
 $_['text_extension'] = 'Extensions';
 $_['text_success']   = 'Settings changed successfully!';
 $_['text_edit']      = 'Module settings';

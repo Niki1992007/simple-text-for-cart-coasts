@@ -6,7 +6,7 @@ class ModelExtensionModuleSimpleTextForCartCoasts extends Model
     public function CreateFieldInProductDescriptionTable()
     {
         $this->db->query(
-            "ALTER TABLE `oc_product_description` ADD `simple_text` VARCHAR(256) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'Простое текстовое поле' AFTER `name`;"
+            "ALTER TABLE " . DB_PREFIX . "product_description ADD `simple_text` VARCHAR(256) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'Простое текстовое поле' AFTER `name`;"
         );
     }
 
@@ -14,7 +14,7 @@ class ModelExtensionModuleSimpleTextForCartCoasts extends Model
     public function DeleteFieldInProductDescriptionTable()
     {
         $this->db->query(
-            "ALTER TABLE `oc_product_description` DROP `simple_text`;"
+            "ALTER TABLE " . DB_PREFIX . "oc_product_description DROP `simple_text`;"
         );
     }
 
